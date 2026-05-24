@@ -10,17 +10,17 @@ test('test the page of MercadoLibre', async ({ page }) => {
   await expect(page.getByTestId('action:understood-button')).toBeVisible();
 
   // 3. getByAltText
-  await expect(page.getByAltText(/Mercado Libre/i).first()).toBeVisible();
+  await expect(page.getByAltText(/MLM FSNB/i).first()).toBeVisible();
 
   // 4. getByText
   await expect(page.getByText(/Categorías/i).first()).toBeVisible();
 
   // 5. getByLabel
-  await expect(page.getByLabel(/Buscar/i)).toBeVisible();
+  await expect(page.getByLabel(/Ingresa lo que quieras encontrar/i)).toBeVisible();
 
   // 6. getByPlaceholder
   await expect(page.getByPlaceholder(/Buscar productos/i)).toBeVisible();
 
   // 7. getByTitle
-  await expect(page.getByTitle(/Mercado Libre/i).first()).toBeVisible();
+  await expect(page.getByTitle(/Carrito/i).first()).toBeVisible();
 });
